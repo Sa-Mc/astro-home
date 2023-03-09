@@ -7,7 +7,7 @@ export const homepage = [
   {
     title: "Easy to use",
     content: "Need to use this template? Just clone it and start writing your content. No complicated setup, no complicated design.",
-    icon: "ph:code-bold",
+    icon: "ph:code",
   },
   {
     title: "Free and Open Source",

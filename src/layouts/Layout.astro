@@ -11,8 +11,8 @@ export interface Props {
 }
 
 const defaultMeta = {
-  title: "NoFuss Astro",
-  description: "No fuss Astro Template for Landing, Blog and Docs page. No complicated design and setup, just start editing.",
+  title: "SamMc",
+  description: "Personal website of SamMc. A collection of misadventures through data, development, and design.",
   image: "/banner.png",
   imageAlt: "Mountain Logo with NoFuss",
 };
@@ -41,18 +41,11 @@ const classBody =
     <meta property="og:description" content={description} />
     <meta property="og:image" content={heroImage} />
     <meta property="og:image:alt" content={imageAlt} />
-    <meta property="og:site_name" content="NoFuss Astro" />
+    <meta property="og:site_name" content="SamMc" />
     <meta property="og:locale" content="en_US" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta name="twitter:site" content="@lancerossdev" />
-    <meta name="twitter:creator" content="@lancerossdev" />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={heroImage} />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="follow, index" />
-    <meta name="author" content="Lance Ross" />
+    <meta name="author" content="SamMc" />
     <script is:inline>
       const primaryColorScheme = "none";
       const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
