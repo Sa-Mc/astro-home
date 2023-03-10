@@ -9,10 +9,19 @@ import Features from "@components/Features.astro";
 
 <Layout>
   <section class="grid py-10 place-items-center text-center">
-    <h1 class="sm:text-4xl text-3xl font-bold mb-6 dark:text-white">Hi, I'm Sam</h1>
-    <p>I like to explore data, development, and design</p>
+    <h1 class="sm:text-4xl text-3xl font-bold mb-6 dark:text-white">
+      Hi, I'm Sam
+    </h1>
+    <p>I like to explore data, development, and design.</p>
   </section>
-  {homepage.map((homepage) => <Features title={homepage.title} icon={homepage.icon} content={homepage.content} />)}
+  <div class="chat chat-start">
+    <div class="chat-header">
+      Sam
+      <time class="text-xs opacity-50">Just now</time>
+    </div>
+    <div class="chat-bubble">this site is under construction. c u soon.</div>
+  </div>
+  <!-- LISTGOESHERE {homepage.map((homepage) => <Features title={homepage.title} icon={homepage.icon} content={homepage.content} />)}
   <section class="py-20 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
     {
       (
@@ -24,5 +33,7 @@ import Features from "@components/Features.astro";
       )
     }
   </section>
+  -->
+
   <Footer />
 </Layout>

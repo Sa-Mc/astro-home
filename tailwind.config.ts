@@ -3,6 +3,16 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  daisyui: {
+    styled: true,
+    themes: true,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
   darkMode: "class",
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,vue}"],
   theme: {
@@ -28,12 +38,12 @@ module.exports = {
               fontSize: "0.8rem",
               padding: "0.5rem 1rem",
               borderTopRightRadius: "0.25rem",
-              borderTopLeftRadius: "0.25rem"
+              borderTopLeftRadius: "0.25rem",
             },
             "div[data-remark-code-title] + pre": {
               marginTop: "0 !important",
               borderTopRightRadius: "0 !important",
-              borderTopLeftRadius: "0 !important"
+              borderTopLeftRadius: "0 !important",
             },
             "p, li": {
               code: {
@@ -68,5 +78,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwind-scrollbar"),
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+  ],
 };
